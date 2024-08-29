@@ -1,0 +1,23 @@
+<button *ngIf="isTrue">True Button</button>
+<button *ngIf="!isTrue">False Button</button>
+
+<div [ngSwitch]="imageCondition">
+    <img *ngSwitchCase="'image1'" src="image1.jpg" alt="Image 1">
+    <img *ngSwitchCase="'image2'" src="image2.jpg" alt="Image 2">
+    <img *ngSwitchDefault src="path/to/no-image.jpg" alt="No Image">
+</div>
+
+
+<ul>
+    <li *ngFor="let item of items; let i = index">{{ i }} - {{ item }}</li>
+</ul>
+
+<ul>
+    <ng-container *ngFor="let item of items; let i = index">
+        <li *ngIf="i % 2 === 0">{{ item }}</li>
+    </ng-container>
+</ul>
+
+<ul>
+    <li *ngFor="let item of sortedItems">{{ item }}</li>
+</ul>

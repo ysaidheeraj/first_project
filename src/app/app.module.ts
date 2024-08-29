@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BookFormComponent } from './book-form/book-form.component';
+import { ConditionalsComponent } from './conditionals/conditionals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BookFormComponent
+    BookFormComponent,
+    ConditionalsComponent
   ],
   imports: [
     BrowserModule,
