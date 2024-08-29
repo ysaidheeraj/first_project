@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Book Name:</label>
+      <input id="name" type="text" [(ngModel)]="book.name" name="name" required>
+    </div>
+  
+    <div>
+      <label for="author">Author Name:</label>
+      <input id="author" type="text" [(ngModel)]="book.author" name="author" required>
+    </div>
+  
+    <div>
+      <label for="date">Date:</label>
+      <input id="date" type="date" [(ngModel)]="book.date" name="date" required>
+    </div>
+  
+    <div>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" [(ngModel)]="book.comments" name="comments" rows="4"></textarea>
+    </div>
+  
+    <button type="submit">Submit</button>
+</form>
